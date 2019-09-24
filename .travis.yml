@@ -6,4 +6,4 @@ before_install:
   - docker build -t zfv2019/alexandria -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true zfv2019/alexandria npm run test
+  - docker run -e CI=true zfv2019/alexandria npm run test -- --coverage
